@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Дональд Кнут</h1>
+        <a href="index.html"><img src="img/globe-solid.svg" alt="логотип" width="60px"></a>
+        <nav>
+            <ul class="menu-header">
+                <li class="menu-item"> <a href="#about"> Информация</a> </li>
+                <li class="menu-item"><a href="#articles">Введение</a></li>
+                <li class="menu-item"><a href="#menus">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about" id="about">
+            <h2><ins>Введение</ins></h2>
+            <a href="img/donald.jpg" download><img class="avatar" src="img/donald.jpg" width="150px" align="left" alt="аватар" /></a>
+            <p>Дональд Эрвин Кнут (англ. Donald Ervin Knuth, Шаблон:Respell[5]; род. 10 января 1938 года, 
+                Милуоки, штат Висконсин) — американский учёный в области информатики, доктор философии (1963), 
+                эмерит-профессор Стэнфордского университета, член Американского философского общества (2012)[6], 
+                преподаватель и идеолог программирования, автор 19 монографий (в том числе ряда классических книг по программированию) 
+                и более 160 статей, разработчик нескольких известных программных технологий.
+                Является автором всемирно известной серии книг, посвящённой основным алгоритмам и методам вычислительной 
+                математики, а также создателем настольных издательских систем TeX и METAFONT, предназначенных для набора и 
+                вёрстки книг научно-технической тематики (в первую очередь — физико-математических).
+            </p>
+            <br>
+            <blockquote>
+                <b>Как говорил Дональд Кнут:</b>
+                <q>
+                    Самая важная вещь в языке программирования — его имя. 
+                    Язык не будет иметь успеха без хорошего имени. Я недавно придумал очень хорошее имя, 
+                    теперь осталось изобрести подходящий язык.
+                </q> 
+            </blockquote>
+            <cite class="wrapper-quater">
+                <p>Источник: <a href="img/donald.jpg" download>https://ru.citaty.net/avtory/donald-knut</a></p>
+            </cite>
+            <time datetime="2024-10-15T22:35 ">
+                22:35 15.10.2024
+            </time>
+            <address>Moscow</address>
+            
+            
+        </section>
+        <section class="sign">
+            <p lang="en">Donald Erwin Knuth</p>
+            <p id="russian">Дональд Эрвин Кнут</p>
+
+        </section>
+        <section class="articles" id="articles">
+            <h2><ins>Информация</ins></h2>
+            <ol>
+                <li><a href="article1.html">Биография</a></li>
+                <li><a href="article2.html">Признание</a></li>
+                <li><a href="article3.html">Премии и награды</a></li>
+                <li class="before"><a href="article4.html">Список терминов</a></li>
+                
+            </ol>
+            <section class="menus" id="menus">
+                <h2><ins>Обратная связь</ins></h2>
+                <form action="" id="contact-form">
+                    <div class="form_item">
+                        <label for="topic">Тема</label><br>
+                        <select name="topic" id="topic">
+                            <option value="1">Заказать услугу</option>
+                            <option value="2">Оставить отзыв</option>
+                            <option value="3">Предложить сотрудничество</option>
+                            <option value="4">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form_item">
+                        <label for="name">Имя</label><br>
+                        <input type="text" name="username" id="name"  placeholder="Например, Алексей"  required>
+                    </div>
+                    <div class="form_item">
+                        <label for="tel">Номер телефона</label><br>
+                        <input type="tel" name="tel" id="tel" placeholder="Например, +79224568794"  required>
+                    </div>
+                    <div class="form_item">
+                        <label for="email">Почта</label><br>
+                        <input type="email" name="email" id="email" placeholder="Например, test@test.ru"  required>
+                    </div>
+                    <div>
+                        <label for="textarea">Текст сообщения</label><br>
+                        <textarea type="text" name="textarea" id="textarea" placeholder="Введите комментарий"  required></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="conf" id="conf" required>
+                        <label for="conf">Соглашаюсь с политикой конфиденциальности</label><br>
+
+                    </div>
+                    <div class="form_item">
+                        <input type="submit">
+                    </div>
+            </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Вербина Полина, 2024 г.</p>
+        <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BD%D1%83%D1%82,_%D0%94%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%B4_%D0%AD%D1%80%D0%B2%D0%B8%D0%BD" target="_blank"> <img src="img/wikipedia-w-brands-solid.svg" alt="icon" width="40px"></a>
+        <p>Вы также можете найти меня <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BD%D1%83%D1%82,_%D0%94%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%B4_%D0%AD%D1%80%D0%B2%D0%B8%D0%BD" target="_blank"><del>здесь</del></a></p>
+        <p><a href="tel:+7998678598">+7998678598</a></p>
+        <p><a href="mailto: Verbina@mail.ru"> Verbina@mail.ru</a></p>
+    </footer>
+        
+</body>
+</html>
